@@ -1,0 +1,30 @@
+1. Analisa "Menurut_Terbanding_Tergugat" dengan LSTM (new brain.recurrent.LSTM()) dan dapatkan hasilnya, kabul = 1, tidak terkabul = 0.
+2. Analisa "Menurut_Pemohon_Banding_Penggugat" dengan LSTM (new brain.recurrent.LSTM()) dan dapatkan hasilnya, kabul = 1, tidak terkabul = 0.
+3. Analisa "Menurut_Majelis_Hakim" dengan LSTM (new brain.recurrent.LSTM()) dan dapatkan hasilnya, kabul = 1, tidak terkabul = 0.
+4. setelah semua hasil didapat, gabungkan dengan object nilai lawan_PKP, FP_lengkap, FP_tepat_waktu, dll.
+5. contoh object gabungan { Menurut_Terbanding_Tergugat: 1, Menurut_Pemohon_Banding_Penggugat: 1, Menurut_Majelis_Hakim: 0, "lawan_PKP": "1", "FP_lengkap": "1", "FP_tepat_waktu": "1", "Ket_FP_sesuai": "0", "lawan_disanksi": "1", "lawan_lapor": "1", "PPN_telah_dibayar": "1", }
+6. dan train dengan neural network new brain.NeuralNetwork();
+7. output {kabul: 1, tidak_terkabul: 1}
+8. output dalam bentuk persentase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
